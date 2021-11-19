@@ -1,6 +1,10 @@
 header .linea_inicial{
-background-color: black;
-height:40%;
+color: rgb(235, 228, 228);
+background-color: rgb(0, 0, 0);
+height: 5%;
+width: 100%;
+position: fixed;
+z-index: 3;
 }
 
 *{
@@ -25,16 +29,19 @@ body{
 header{
     
     width: 100%;
-    height: 20%;
+    height: 30%;
     
 }
 header .cabecera{
     display: flex;
-    height: 150px;
+    height: 10%;
     background-color:white; 
 }
-header .logo{
-    width: 80%;
+header .cabecera .logo{
+    margin-top: 5%;
+    width: 50%;
+    justify-content: center;
+    
     /* text-align: center; */  
 }
 header .logo h1{
@@ -44,20 +51,24 @@ header .logo h1{
     text-shadow: -10px -5px  rgba(163, 31, 31, 0.062);
 }
 header .redes ul{
+    color: black;
+    width: 50%;
     list-style-type: none;
     font-size: 20px;
     display: flex;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 40%;
+    align-items: center;
 }
 
 header .redes ul li{
-    margin: 20px;
+
+    margin: 20%;
     transition: 1s;
 }
 
 header .redes ul li:hover{
-    transform: scale(2);
+    transform: scale(4);
 }
 header .cabecera > div{
     margin: 30px;
@@ -145,13 +156,20 @@ header .cabecera > div{
 display:flex;
 background-color: rgb(105, 210, 241);
 padding: 5%;
-grid-template-columns: 1fr 2fr;
+/* grid-template-columns: 2fr 1fr; */
 }
 
 .section6 .ubicacion{
 display: flex;
 /* align-items: center; */
-margin-right: 10%;
+/* margin-right:10%; */
+width: 100%;
+
+}
+.section6 .about{
+display: flex;
+width: 100%;
+
 
 }
 
@@ -220,25 +238,26 @@ margin-right: 10%;
     height: 300px;
     width: 400px;
 }
-.catalago{
+/* .catalago{
     width: 100%;
     height: 100px;
-    /* background-color: rgba(97, 15, 15, 0.534); */
+    background-color: rgba(97, 15, 15, 0.534);
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.catalago button{
-    width: 100px;
-    height: 40px;
-    border-radius: 10px;
+.linea_inicial button{
+    width: 10%;
+    height: 100%;
+    border-radius: 2%;
     background-color: transparent;
     letter-spacing: 3px;
     box-shadow: 0 0 20px white, 0 0 40px white;
     animation: cambio 4s linear infinite alternate;
     cursor: pointer;
     margin-left: 30px;
+    background-color: thistle;
 }
 button:hover{
     background-color: rgb(232, 230, 240);
@@ -247,61 +266,61 @@ button:hover{
 
 
 .about{
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    height: auto;
+    height: 50%;
     background-color: rgba(0, 0, 0, 0.5);
     /* margin: auto; */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     overflow: hidden;
 }
-.about::before{
+/* .about::before{
     content: '';
-    position: absolute;
-    width: 400px;
-    height: 240%;
+     position: absolute; 
+    width: 100%;
+    height: 100%;
     background: white;
-    /* animation: animate 5s linear infinite; */
+     animation: animate 5s linear infinite; 
     
-}
-.about::after{
+} */
+/* .about::after{
     content: '';
     position: absolute;
     inset: 4px;
     background:rgb(233, 228, 228);
-}
+} */
 
 .about .info{
-    width: 45%;
-    height: 80%;
+    width: 200%;
+    height: 10%;
     /* background-color: aqua; */
-    z-index: 2;
-    margin: auto; 
-    text-align:left;  
-   
+    z-index: 1;
+    /* margin: auto;  */
+    /* text-align:left;   */
 }
 .about .image img{
     width:100%;
-    height: auto;
+    /* height: auto; */
     border-radius: 5%;
-    display: grid;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 .about p{
+width: 100%;
 
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 
-
-
 .ubicacion{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin-top: 10px; */
 }
 .ubicacion div{
     margin-left: 20%;
@@ -330,18 +349,19 @@ footer p{
     margin-top:20px;
 }
 .eleccion{
-    width: 1000px;
-    height: 620px;
-    position: absolute;
-    background-color: rgb(5, 5, 5);
-    top: 30%;
+    
+    width: 80%;
+    height: 90%;
+    position: absolute ;
+    background-color: rgb(250, 103, 103);
+    top: 5%;
     
     left:15%;
     
-    z-index: -1;
+    z-index: -3;
     opacity: 0;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     transition: 1s;
 }
@@ -355,23 +375,31 @@ footer p{
 .eleccion .hombres{
     background-image: url(imagenes/Catálogo/Caballistas/imghombres.jpeg) ;
     background-size: cover;
+   
     
 }
 .eleccion .atras{
+    width: 10%;
+    height: 5%;
     position: absolute;
-    top: 10px;
+    top: 1%;
     color: black;
+    background-color:rgb(185, 112, 112);
     cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .eleccion .hombres .boton{
     background-color: rgb(7, 4, 160);
     color: white;
-    width: 90px;
+    height: 10%;
+    width: 20%;
     border-radius: 20px;
     position: relative;
-    bottom: -530px;
-    left: 280px;
+  
+    bottom: -100%;
+    left: 80%;
     cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .eleccion .mujeres{
     background-image: url(imagenes/Catálogo/mujeres/imgmujeres.jpg) ;
@@ -379,14 +407,16 @@ footer p{
     
 }
 .eleccion .mujeres button{
-    background-color: rgb(7, 4, 160);
-    color: white;
-    width: 90px;
+    background-color: rgb(231, 231, 241);
+    color: rgb(0, 0, 0);
+    height: 10%;
+    width: 20%;
     border-radius: 20px;
     position: relative;
-    bottom: -530px;
-    left: 280px;
+    bottom: -100%;
+    left: 80%;
     cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .logo img{

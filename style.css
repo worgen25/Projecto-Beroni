@@ -78,10 +78,15 @@ header .cabecera > div{
 .section1{
     width: 100%;
     height: 50%;
-    background-color: rgba(250, 177, 255, 0.63);
+    /* background-color: rgba(250, 177, 255, 0.63); */
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #FF7AF1;
+    background: -moz-linear-gradient(left, #FF7AF1 0%, #FFA6FC 100%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(left, #FF7AF1 0%, #FFA6FC 100%, #FFFFFF 100%);
+    background: linear-gradient(to right, #FF7AF1 0%, #FFA6FC 100%, #FFFFFF 100%);
+        
 }
 .section2 {
     width: 100%;
@@ -97,10 +102,14 @@ header .cabecera > div{
     
     width: 100%;
     height:50%;
-    background-color: rgba(22, 194, 137, 0.637); 
+    /* background-color: rgba(22, 194, 137, 0.637);  */
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #FFFFFF;
+background: -moz-linear-gradient(left, #FFFFFF 0%, #4DFFF2 0%, #07B0A7 100%);
+background: -webkit-linear-gradient(left, #FFFFFF 0%, #4DFFF2 0%, #07B0A7 100%);
+background: linear-gradient(to right, #FFFFFF 0%, #4DFFF2 0%, #07B0A7 100%);
 }
 
 
@@ -170,7 +179,6 @@ width: 100%;
 display: flex;
 width: 100%;
 
-
 }
 
 
@@ -211,10 +219,14 @@ width: 100%;
     padding: 10px 0;
     font-size: 30px;
     border-radius: 10px;
-    background-color: rgb(160, 160, 160);
+    /* background-color: rgb(160, 160, 160); */
     opacity: 100%;
     margin-bottom: 20%;
 
+    background: #8A767C;
+background: -moz-linear-gradient(-45deg, #8A767C 0%, #FFFFFF 50%, #8A767C 100%);
+background: -webkit-linear-gradient(-45deg, #8A767C 0%, #FFFFFF 50%, #8A767C 100%);
+background: linear-gradient(135deg, #8A767C 0%, #FFFFFF 50%, #8A767C 100%);
 }
 
 
@@ -269,7 +281,7 @@ button:hover{
     /* position: relative; */
     width: 100%;
     height: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(196, 16, 16, 0.5);
     /* margin: auto; */
     display: flex;
     /* justify-content: center;
